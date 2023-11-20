@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-effect</title>
+    <style>
+        body{
+            background-color: hotpink;
+            margin: 0;
+        }
+        .tot{
+            display: grid;
+
+            width: 250px;
+            height: 250px;
+            color: black;
+            position: relative;
+            box-shadow: 5px 9px 5px white;
+            margin: 50% auto;
+            background-color: black;
+           
+        }
+
+        span{
+           
+            display: inline-block;
+           border-radius: 15px;
+           box-shadow: 5px 6px 5px rgb(190, 210, 0);
+            align-self: center;
+            justify-self: center;
+            display: inline-block;
+            width: 135px;
+            height: 135px;
+            background-color: bisque;
+           
+          
+        }
+        #p{
+            display: flex;
+            display: inline-block;
+            width: 135px;
+            height: 135px;
+            text-transform: uppercase;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 40%;
+           
+            
+          
+        }
+        span::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 0px;
+            height: 10px;
+            background-color: white;
+        }
+        span::after{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            content: "";
+            width: 0px;
+            height: 10px;
+            background-color: white;
+        }
+        span:hover::before{
+           width: 250px; 
+           background-color: green;
+           transition: 5s;
+        } 
+        span:hover::after{
+           width: 100%;
+           background-color: green;
+           transition: 5s;
+        } 
+
+        #p::before{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            width: 15px;
+            height: 0px;
+            background-color: white;
+        }
+        #p::after{
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: "";
+            width: 15px;
+            height: 0px;
+            background-color: white;
+        }
+
+        #p:hover::before{
+           height: 100%;
+           background-color: red;
+           transition: 5s;
+           transition-delay: .3s;
+        } 
+        #p:hover::after{
+           height: 100%;
+           background-color: red;
+           transition: 5s;
+           transition-delay: .3s;
+        } 
+        span:hover{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+  
+<div class="tot">
+    
+    <span><strong id="p">bangladesh</strong></span>
+</div>
+
+
+
+    </script>
+</body>
+</html>
